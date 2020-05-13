@@ -3,10 +3,12 @@
 
 int main(int argc, char **argv)
 { 	
-    struct obj *ptr = obj_alloc();
+    	struct obj *ptr = obj_alloc();
 	m_struct *m_ptr = opaque_malloc();
+	
 	//ptr->id=100; //Forbidden
-    set_m_struct_member(m_ptr, 2000);
+   	
+	set_m_struct_member(m_ptr, 2000);
 	obj_setid(ptr, 10);
 	
 	printf("obj_getid %d\n",obj_getid(ptr));
